@@ -5,6 +5,6 @@ public class Main {
         int a = 1000_000;// Сумма кредита
         int b = 3;// Срок займа в годах
         int myResult = service.calculate(a,12*b);
-        System.out.println(myResult);
+        System.out.println("Ежемесячный платеж составляет - " + myResult + " руб.");
     }
 }
