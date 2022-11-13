@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
-        int a = 1000_000;// Сумма кредита
-        int b = 3;// Срок займа в годах
-        int myResult = service.calculate(a,12*b);
-        System.out.println("Ежемесячный платеж составляет - " + myResult + " руб.");
+        int creditSum = 1000_000;// Сумма кредита
+        int loanTerm = 3;// Срок займа в годах
+        int payment = service.calculate(creditSum, 12 * loanTerm); // Ежемесячный платеж
+        System.out.println("Ежемесячный платеж составляет - " + payment + " руб.");
     }
 }
